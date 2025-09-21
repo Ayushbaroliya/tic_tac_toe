@@ -1,4 +1,4 @@
-*{
+/* *{
    margin:0px;
    padding: 0px;
 }
@@ -65,4 +65,154 @@ body{
    font-size: 4vmin;
    font-weight: bold;
    color: blue;
+
+} */
+
+*{
+   margin:0px;
+   padding: 0px;
+}
+body{
+   background-color: greenyellow;
+   text-align: center;
+   font-family: 'Times New Roman', Times, serif;
+}
+.container{
+   background-color:#29bf12;
+   height: 70vh;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+.game{
+   height: 60vmin;
+   width: 60vmin;
+   display: flex;
+   flex-wrap:wrap;
+   justify-content: center;
+   align-items: center;
+   gap:1.5vmin;
+}
+.box{
+   height: 18vmin;
+   width: 18vmin;
+   border-radius :1rem;
+   border :none;
+   box-shadow: 0 0 1rem rgba(0, 97, 253, 0.9);
+   font-size: 8vmin;
+   color:#f21b3f;
+   background-color: gold;
+}
+
+#reset{
+   margin-top: 2rem;
+   height: 7vmin;
+   width: 13vmin;
+   border-radius :1rem;
+   border :none;
+   font-size: 3vmin;
+   background-color: #ff9914;
+   cursor: pointer;
+   color:rgb(0, 4, 255);
+   font-style: italic;
+   font-weight: bold;
+   gap: 3rem;
+}
+#ng{
+   margin-top: 2rem;
+   height: 6vmin;
+   width: 20vmin;
+   border-radius :1rem;
+   border :none;
+   font-size: 3vmin;
+   background-color: #ff9914;
+   cursor: pointer;
+   color:rgb(13, 0, 255);
+   font-style: italic;
+   font-weight: bold;
+   gap: 3rem;
+}
+#msg{
+   height: 4vmin;
+   width: 30vmin;
+   border-radius :1rem;
+   border :none;
+   font-size: 3vmin;
+   color: #f21b3f;
+   background-color: gold;
+   font-style: italic;
+   font-weight: bold;
+   justify-self: center;
+}
+#scrx{
+   height: 4vmin;
+   margin: 5px;
+   width: 30vmin;
+   border-radius :1rem;
+   border :none;
+   font-size: 3vmin;
+   color: #f21b3f;
+   background-color: gold;
+   font-style: italic;
+   font-weight: bold;
+   justify-self: center;
+   gap :3rem;
+}
+#scr0{
+   height: 4vmin;
+   margin: 5px;
+   width: 30vmin;
+   border-radius :1rem;
+   border :none;
+   font-size: 3vmin;
+   color: #f21b3f;
+   background-color: gold;
+   font-style: italic;
+   font-weight: bold;
+   justify-self: center;
+   gap :3rem;
+}
+
+
+@media (max-width: 768px) {
+   .game {
+      height: 80vmin;
+      width: 80vmin;
+   }
+   .box {
+      height: 24vmin;
+      width: 24vmin;
+      font-size: 10vmin;
+   }
+   #reset, #ng {
+      width: 30vmin;
+      font-size: 4vmin;
+   }
+   #msg, #scrx, #scr0 {
+      width: 70vw;
+      font-size: 4vmin;
+   }
+}
+
+@media (max-width: 480px) {
+   .game {
+      height: 90vmin;
+      width: 90vmin;
+      gap: 2vmin;
+   }
+   .box {
+      height: 28vmin;
+      width: 28vmin;
+      font-size: 12vmin;
+   }
+   #reset, #ng {
+      width: 80%;
+      height: auto;
+      padding: 1rem;
+      font-size: 5vmin;
+   }
+   #msg, #scrx, #scr0 {
+      width: 90%;
+      font-size: 5vmin;
+   }
 }
